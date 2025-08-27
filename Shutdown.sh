@@ -10,9 +10,6 @@ case "$resposta" in
     [sSyY])
         # Se a resposta for s, S, y ou Y, executa este bloco.
 	shutdown -h now
-        # --- FIM DA AÇÃO 'A' ---
-
-        echo "Ação 'a' finalizada."
         ;;
 
     *)
