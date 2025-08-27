@@ -1,6 +1,7 @@
 #!/bin/bash
 
 neofetch &&
+echo TEST
 echo sudo flatpak update -y &&
 echo sudo snap refresh &&
 echo sudo apt update &&
