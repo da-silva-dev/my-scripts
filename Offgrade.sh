@@ -1,7 +1,5 @@
 #!/bin/bash
 
-cd Git/my-scripts/ &&
-git pull &&
 neofetch &&
 echo sudo flatpak update -y &&
 echo sudo snap refresh &&
