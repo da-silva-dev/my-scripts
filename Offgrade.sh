@@ -1,6 +1,7 @@
 #!/bin/bash
 
 neofetch &&
+echo KAWAN CABEÇA DE PAN
 echo sudo flatpak update -y &&
 echo sudo snap refresh &&
 echo sudo apt update &&
