@@ -3,6 +3,6 @@
 cd /$HOME/Git/my-scripts/ &&
 git pull &&
 chmod +x * &&
-/$HOME/Git/my-scripts/Offgrade.sh
-cd $HOME/
+cd $HOME/ &&
 echo ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: &&
+/$HOME/Git/my-scripts/Offgrade.sh
