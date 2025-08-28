@@ -8,9 +8,13 @@ echo sudo apt upgrade -y &&
 echo DIGITE A SENHA PARA EXECUTAR OS COMANDOS ACIMA: &&
 sudo -v &&
 sudo flatpak update -y &&
+echo ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: &&
 sudo snap refresh &&
+echo ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: &&
 sudo apt update &&
+echo ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: &&
 sudo apt upgrade -y &&
+echo ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: &&
 #Ask if the user want to shutdown and waits for 1 keystroke as answer
 #-n 1: read 1 keystroke
 #-p "..." : show the text prompt
@@ -28,3 +32,5 @@ case "$answer" in
         echo "Shutdown aborted"
         ;;
 esac
+echo ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: &&
+echo SCRIPT COMPLETE
