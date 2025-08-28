@@ -6,7 +6,7 @@ echo sudo flatpak update -y &&
 echo sudo snap refresh &&
 echo sudo apt update &&
 echo sudo apt upgrade -y &&
-echo DIGITE A SENHA PARA EXECUTAR OS COMANDOS ACIMA: &&
+echo TYPE THE PASSWORD TO RUN THE COMMANDS ABOVE: &&
 sudo -v &&
 echo ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: &&
 sudo flatpak update -y &&
