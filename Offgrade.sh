@@ -11,20 +11,20 @@ sudo flatpak update -y &&
 sudo snap refresh &&
 sudo apt update &&
 sudo apt upgrade -y &&
-# Faz a pergunta e espera por uma única tecla como resposta.
-# -n 1: lê apenas 1 caractere.
-# -p "..." : exibe o texto do prompt.
-read -n 1 -p "DESEJA DESLIGAR O COMPUTADOR? (s/S/y/Y): " resposta
-echo "" # Adiciona uma quebra de linha para organizar a saída.
+# Ask if the user want to shutdown and waits for 1 keystroke as answer
+# -n 1: read 1 keystroke
+# -p "..." : show the text prompt
+read -n 1 -p "Shutdown computer? (s/S/y/Y): " answer
+echo "" #help to format the output
 
-# Verifica qual tecla foi pressionada
-case "$resposta" in
+#Verify what key was pressed
+case "$answer" in
     [sSyY])
-        # Se a resposta for s, S, y ou Y, executa este bloco.
+        #If the answer is s, S, y or Y, it will proceed to shutdown
 	shutdown -h now
         ;;
     *)
-        # Se qualquer outra tecla for pressionada, executa este bloco.
-        echo "DESLIGAMENTO CANCELADO"
+        #If any other key (including just "enter") is pressed, it doesn't shutdown and leave the terminal running
+        echo "Shutdown aborted"
         ;;
 esac
