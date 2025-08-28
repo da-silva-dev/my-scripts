@@ -11,9 +11,9 @@ sudo flatpak update -y &&
 sudo snap refresh &&
 sudo apt update &&
 sudo apt upgrade -y &&
-# Ask if the user want to shutdown and waits for 1 keystroke as answer
-# -n 1: read 1 keystroke
-# -p "..." : show the text prompt
+#Ask if the user want to shutdown and waits for 1 keystroke as answer
+#-n 1: read 1 keystroke
+#-p "..." : show the text prompt
 read -n 1 -p "Shutdown computer? (s/S/y/Y): " answer
 echo "" #help to format the output
 
