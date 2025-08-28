@@ -1,12 +1,14 @@
 #!/bin/bash
 
 neofetch &&
+echo ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: &&
 echo sudo flatpak update -y &&
 echo sudo snap refresh &&
 echo sudo apt update &&
 echo sudo apt upgrade -y &&
 echo DIGITE A SENHA PARA EXECUTAR OS COMANDOS ACIMA: &&
 sudo -v &&
+echo ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: &&
 sudo flatpak update -y &&
 echo ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: &&
 sudo snap refresh &&
@@ -34,3 +36,4 @@ case "$answer" in
 esac
 echo ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: &&
 echo SCRIPT COMPLETE
+exec bash
