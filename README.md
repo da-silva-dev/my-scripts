@@ -1,0 +1,1 @@
+These scripts were supposed to be called by keyboard shortcuts configured in gnome, the shortcut will call a "Calling(...).sh" that will call the actual script itself, everything you be shown in a terminal window.
